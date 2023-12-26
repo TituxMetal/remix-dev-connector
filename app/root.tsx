@@ -1,13 +1,6 @@
 import type { LinksFunction, LoaderFunctionArgs } from '@remix-run/node'
 import { json } from '@remix-run/node'
-import {
-  Links,
-  LiveReload,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration
-} from '@remix-run/react'
+import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react'
 
 import { getUser } from './services/session.server'
 import tailwindStylesheetUrl from './styles/tailwind.css'
@@ -31,8 +24,10 @@ const App = () => {
         <Meta />
         <Links />
       </head>
-      <body className='h-full'>
-        <Outlet />
+      <body className='h-full w-full'>
+        <main className='m-auto w-full max-w-screen-lg'>
+          <Outlet />
+        </main>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
