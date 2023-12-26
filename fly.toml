@@ -1,12 +1,17 @@
-# fly.toml app configuration file generated for remix-dev-connector on 2023-12-25T22:01:12+01:00
+# fly.toml app configuration file generated for 20231225-remix-dev-connector on 2023-12-26T10:28:39+01:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "remix-dev-connector"
-primary_region = "lhr"
+app = "20231225-remix-dev-connector"
+primary_region = "lax"
 
 [build]
+
+[[mounts]]
+  source = "data"
+  destination = "/data"
+  auto_extend_size_threshold = 0
 
 [http_service]
   internal_port = 3000
