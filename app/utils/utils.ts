@@ -1,7 +1,7 @@
 import { useMatches } from '@remix-run/react'
 import { useMemo } from 'react'
 
-import type { User } from '~/models'
+import { type User } from '~/models'
 
 const DEFAULT_REDIRECT = '/'
 
@@ -33,23 +33,15 @@ export const safeRedirect = (
  * @param {string} id The route id
  * @returns {JSON|undefined} The router data or undefined if not found
  */
-export const useMatchesData = (
-  id: string
-): Record<string, unknown> | undefined => {
+export const useMatchesData = (id: string): Record<string, unknown> | undefined => {
   const matchingRoutes = useMatches()
-  const route = useMemo(
-    () => matchingRoutes.find(route => route.id === id),
-    [matchingRoutes, id]
-  )
+  const route = useMemo(() => matchingRoutes.find(route => route.id === id), [matchingRoutes, id])
   return route?.data as Record<string, unknown>
 }
 
 const isUser = (user: unknown): user is User => {
   return (
-    user != null &&
-    typeof user === 'object' &&
-    'email' in user &&
-    typeof user.email === 'string'
+    user != null && typeof user === 'object' && 'email' in user && typeof user.email === 'string'
   )
 }
 

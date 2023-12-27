@@ -1,4 +1,4 @@
-import type { User, Note } from '@prisma/client'
+import { type Note, type User } from '@prisma/client'
 
 import { prisma } from '~/lib'
 
@@ -44,10 +44,7 @@ export const createNote = ({
   })
 }
 
-export const deleteNote = ({
-  id,
-  userId
-}: Pick<Note, 'id'> & { userId: User['id'] }) => {
+export const deleteNote = ({ id, userId }: Pick<Note, 'id'> & { userId: User['id'] }) => {
   return prisma.note.deleteMany({
     where: { id, userId }
   })
