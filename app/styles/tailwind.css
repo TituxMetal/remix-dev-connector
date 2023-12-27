@@ -5,6 +5,10 @@
 @layer base {
   html,
   body {
-    @apply h-full bg-zinc-700 text-zinc-200;
+    @apply h-full bg-background text-forground;
+  }
+
+  body {
+    @apply text-2xl;
   }
 }
