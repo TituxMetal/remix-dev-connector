@@ -33,9 +33,13 @@
     "@remix-run/serve": "^2.4.1",
     "@remix-run/server-runtime": "^2.4.1",
     "bcryptjs": "^2.4.3",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
     "isbot": "latest",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "tailwind-merge": "^2.2.0",
+    "tailwindcss": "^3.4.0"
   },
   "devDependencies": {
     "@faker-js/faker": "^8.3.1",
@@ -69,7 +73,6 @@
     "prettier-plugin-tailwindcss": "^0.5.9",
     "prisma": "^5.7.1",
     "remix-flat-routes": "^0.6.4",
-    "tailwindcss": "^3.4.0",
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.1.2",
     "typescript": "^5.2.0",
