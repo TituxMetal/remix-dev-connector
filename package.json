@@ -6,6 +6,7 @@
   "license": "MIT",
   "author": "Titux Metal (DEV) <github@lgdweb.fr>",
   "sideEffects": false,
+  "type": "module",
   "scripts": {
     "build": "remix build",
     "dev": "remix dev --manual",

@@ -5,7 +5,7 @@ module.exports = {
   cacheDirectory: './node_modules/.cache/remix',
   ignoredRouteFiles: ['**/.*'],
   appDirectory: 'app',
-  serverModuleFormat: 'cjs',
+  serverModuleFormat: 'esm',
   tailwind: true,
   postcss: true,
   routes: async defineRoutes => {
