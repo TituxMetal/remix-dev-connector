@@ -1,3 +1,6 @@
+import clsx, { type ClassValue } from 'clsx'
+import { twMerge } from 'tailwind-merge'
+
 export class InvariantError extends Error {
   constructor(message: string) {
     super(message)
@@ -53,3 +56,5 @@ export function invariantResponse(
     })
   }
 }
+
+export const cn = (...inputs: ClassValue[]) => twMerge(clsx(inputs))
