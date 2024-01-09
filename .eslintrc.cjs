@@ -27,13 +27,13 @@ module.exports = {
     'import/order': [
       'warn',
       {
-        alphabetize: {
+        'alphabetize': {
           order: 'asc',
           caseInsensitive: true
         },
-        groups: [['builtin', 'external'], 'internal', 'parent', 'sibling'],
+        'groups': [['builtin', 'external'], 'internal', 'parent', 'sibling'],
         'newlines-between': 'always',
-        pathGroups: [
+        'pathGroups': [
           {
             pattern: '~/**',
             group: 'parent'
