@@ -8,6 +8,7 @@ module.exports = {
   serverModuleFormat: 'esm',
   tailwind: true,
   postcss: true,
+  watchPaths: ['./tailwind.config.ts'],
   routes: async defineRoutes => {
     return flatRoutes('routes', defineRoutes, { appDir: 'app' })
   }
