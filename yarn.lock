@@ -3796,9 +3796,9 @@ gunzip-maybe@^1.4.2:
     through2 "^2.0.3"
 
 happy-dom@^13.0.0:
-  version "13.5.0"
-  resolved "https://registry.yarnpkg.com/happy-dom/-/happy-dom-13.5.0.tgz#11b3b5ea53dd49e59569830070f803794e6661df"
-  integrity sha512-0XWOSvyc03Z2Ye+VGP5pN6fpwgKMy3a2d09RuGRqAR4TEaW0SCtw3upt7dLoKaYBFUO+JeuDJh366aDBat3OVQ==
+  version "13.5.3"
+  resolved "https://registry.yarnpkg.com/happy-dom/-/happy-dom-13.5.3.tgz#6a153b836fd7fabdaf899343bb84ffc3217a86b2"
+  integrity sha512-0JLyo8j0weBc+neK+KlHIOPlprVmWPwbYqwhCgKEQrC+twLFhz2PXul3Cnn1e9HjHIECN8EoTJ1ksRYansRdjQ==
   dependencies:
     entities "^4.5.0"
     webidl-conversions "^7.0.0"
@@ -6641,6 +6641,7 @@ stringify-entities@^4.0.0:
     character-entities-legacy "^3.0.0"
 
 "strip-ansi-cjs@npm:strip-ansi@^6.0.1", strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+  name strip-ansi-cjs
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
   integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
